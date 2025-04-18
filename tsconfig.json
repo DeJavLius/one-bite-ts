@@ -1,0 +1,18 @@
+{
+  // 상세 옵션 설정 시
+  "compilerOptions": {
+    // 라이브러리 타입 검사 생략
+    "skipLibCheck": true,
+    // JS 버전 설정
+    "target": "ESNext",
+    // 모듈 설정 변환
+    "module": "ESNext",
+    "outDir": "dist",
+    // JS 코드의 검사
+    "strict": true,
+    // TS의 개별 파일의 동일 모듈화를 사용하지 않음
+    "moduleDetection": "force",
+  },
+  // 특정 폴더 내 TS 파일 컴파일 설정
+  "include": ["Section1/src"]
+}
