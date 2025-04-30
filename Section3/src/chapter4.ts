@@ -1,7 +1,7 @@
 /**
- * 대수 타입
+ * 논리 연산 타입
  */
-// 합집합
+// OR
 let a: string | number | boolean;
 a = "";
 a = 10;
@@ -19,44 +19,44 @@ type Person = {
   language: string;
 };
 
-type UnionDP = Dog | Person;
+type OrDP = Dog | Person;
 
-let union1: UnionDP = {
+let or1: OrDP = {
   name: "",
   color: "",
 };
 
-let union2: UnionDP = {
+let or2: OrDP = {
   name: "",
   language: "",
 };
 
-let union3: UnionDP = {
+let or3: OrDP = {
   name: "",
   color: "",
   language: "",
 };
 
-// let union4: UnionDP = { name: "", } // error
-// let union4: UnionDP = {
+// let or4: OrDP = { name: "", } // error
+// let or4: OrDP = {
 //   language: "",
 //   color: "",
 // } // error
 
-console.log(union1, union2, union3);
+console.log(or1, or2, or3);
 
-// 교집합
+// AND
 let variable: number & string; // never
 
-type Interscetion = Dog & Person;
+type And = Dog & Person;
 
-// let inster: Interscetion = {
+// let and: And = {
 //   name: "",
 //   color: "",
 //   // language: "", // error
 // };
 
-let inster: Interscetion = {
+let and: And = {
   name: "",
   color: "",
   language: "",
