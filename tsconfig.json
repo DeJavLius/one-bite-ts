@@ -7,7 +7,7 @@
     "target": "ESNext",
     // 모듈 설정 변환
     "module": "ESNext",
-    "outDir": "dist/Section2",
+    "outDir": "dist/Section3",
     // TS의 개별 파일의 동일 모듈화를 사용하지 않음
     "moduleDetection": "force",
     // JS 코드 엄격 검사, strict 관련 옵션의 상위 옵션
@@ -16,5 +16,5 @@
     // "strictNullChecks": false
   },
   // 특정 폴더 내 TS 파일 컴파일 설정
-  "include": ["Section2/src"]
+  "include": ["Section3/src"]
 }
