@@ -29,3 +29,25 @@ let user2: User = {
   bio: "introduce myself",
   location: "seoul",
 };
+
+// 인덱스 시그니처
+type CountryCodes = {
+  [key: string]: string;
+}
+
+let contryCodes: CountryCodes = {
+  Korea: 'ko',
+  UnitedState: 'us',
+  UnitedKingdom: 'uk',
+}
+
+type CountryNumberCodes = {
+  [key: string]: number;
+  Korea: number;
+}
+
+let countryNumberCodes: CountryNumberCodes = {
+  Korea: 410, // 생략 시 오류
+  UnitedState: 840,
+  UnitedKingdom: 826,
+}
